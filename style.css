@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background-color: #222;
+	border-top-style: solid;
+	border-top-width: 25px;
+	border-top-color: #333;
+	width: 99%;
+	padding-left: .5%;
+	padding-right: .5%;
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+footer {
+	border: solid;
+	border-color: #222;
+}
+
+header h1 {
+	line-height: 35%;
+}
+header h2 {
+	line-height: 35%;
+	font-size: min(4vw, 125%);
+	font-family: 'Roboto';
+	opacity: .75;
+}
+header li a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: min(4vw, 100%);
+	display: block;
+	color: white;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+header li a:hover {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #111;
+}
+
+footer p {
+	margin-top: 0;
+	padding-bottom: 8px;
+}
+
+body h1 {
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	text-align: center;
+}
+
+body img {
+	width: 35%;
+	height: 35%;
+}
+body p {
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	text-align: center;
+}
+
+section {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+section h1 {
+	font-size: 300%;
+	text-align: center;
+}
+
+section p {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	text-align: center;
+	background: rgb(255,255,255,.5);
+}
+
+article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	background-color: #bbb;
+	padding: 10px;
+	justify-content: center;
+}
+
+article p {
+	width:min(75vw, 560px);
+	margin: auto;
+}
+
+nav ul { /*bar format*/
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #333;
+	
+}
+footer {
+	bottom: 0;
+	background-color: #222;
+	text-align: center;
+	left: -7.5%;
+	font-size: 75%;
+	color: white;
+}
+footer img {
+	width: 35px;
+	padding: 25px 10px 25px 15px;
+}
+
+.dropdown-content {
+	font-family: 'Open Sans', sans-serif;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	font-family: 'Open Sans', sans-serif;
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown {
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+}
+
+.dropdown:hover {
+	background-color: #111;
+}
+
+.dropdown .dropbtn {
+	font-size: min(4vw, 100%);  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+}
+
+.skillcontainer {
+	position: relative;
+	height: min(300px, 29vw);
+	overflow: hidden;
+}
+
+.skillcontainer img {
+	position: absolute;
+	top: 50%;
+	width:100%;
+	height:200%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.skillcontainer h1 {
+	text-align: center;
+	font-size: min(7.5vw, 400%);
+	text-shadow: 2px 2px black;
+}
+
+.skillcontainer .content {
+	position: absolute;
+	background: rgb(0,0,0);
+	background: rgb(0,0,0,.65);
+	transition: .3s;
+	color: white;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.skillcontainer .content:hover {
+	background: rgb(0,0,0,.25)
+}
+
+
+@media (max-width: 1000px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+	.skillcontainer,nav {
+		width: 1080px;
+		margin: auto;
+	}
+	header section article img {
+		float: right;
+	}
+}
+@media (max-width: 500px) {
+	li, .dropdown{
+		float: center;
+		margin: auto;
+	}
+	.dropdown-content {
+		position:relative;
+	}
+}
+@media (min-width: 500px) {
+	li, .dropdown{
+		float: left;
+		margin: auto;
+	}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width:min(75vw, 1120px); 
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(0,0,0,0.8);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
