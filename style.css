@@ -3,6 +3,20 @@
 @import 
 url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@font-face { font-family: GrappleFisher; 
+			 src: 
+			 	url('fonts/grapple-fisher.woff2'),
+				url('fonts/grapple-fisher.woff'); } 
+
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+	.pagebreak { page-break-after: always; }
+}
 
 html, body {
 	margin: 0;
@@ -307,5 +321,118 @@ footer img {
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.manual {
+	height: min(1056px,100%);
+}
+/* manual container */
+.manual section {
+	background-color: #DDB97A;
+	width: min(816px,100%); 
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+.manual article {
+	background-color: #DDB97A;
+	display: flex;
+	padding: 0%;
+}
+
+.manual p {
+	background-color: #DDB97A;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-align:center; 
+	font-family: 'GrappleFisher';
+}
+
+.manual h1 {
+	background-color: #DDB97A;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-align:center; 
+	font-family: 'GrappleFisher';
+}
+
+.manual h2 {
+	background-color: #DDB97A;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-align:center; 
+	font-family: 'GrappleFisher';
+}
+
+@media (max-width: 1920px){
+	.manual p {
+		font-size: max(1.5vw, 20px); 
+	}
+	.manual h1 {
+		font-size: max(3vw, 30px); 
+	}
+	.manual h2 {
+		font-size: max(2.25vw, 25px); 
+	}
+}
+
+@media (min-width: 1920px){
+	.manual p {	
+		font-size: 30px; 
+	}
+	.manual h1 {
+		font-size: 60px; 
+	}
+	.manual h1 {
+		font-size: 45px; 
+	}
+}
+
+@media (max-width: 900px) {
+	.manual section {
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 500px) {
+	.manual .fishbox img {
+		width: max(100px, 30vw);
+	}
+	.manual .fishbox p {
+		font-size: min(12px, 10vw);
+	}
+}
+
+@media (min-width: 500px) {
+	.manual .fishbox img {
+		width: 200px;
+	}
+	.manual .fishbox p {
+		font-size: min(3vw, 20px);
+	}
+}
+
+.manual img {
+	width: min(816px,100%); 
+	display: block; 
+	margin-left: auto; 
+	margin-right:auto; 
+	padding-bottom: 0px; 
+	padding-top: 0px; 
+	background-color: #DDB97A;
+}
+
+.manual .fishbox img {
+	height: auto; 
+	float: left; 
+	padding-right: 50px; 
+	vertical-align: middle; 
+	padding-left: 50px;
+}
+
+.manual .fishbox p {
+	margin-left: 5%; 
+	margin-right: 5%; 
+	text-align: left; 
+	transform: translateY(20%); 
+	background-color: transparent;
 }
 
