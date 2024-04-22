@@ -407,7 +407,7 @@ footer img {
 		width: 250px;
 	}
 	.manual .fishbox p {
-		font-size: min(3vw, 15px);
+		font-size: min(3vw, 20px);
 		transform: translateY(-30%); 
 	}
 }
