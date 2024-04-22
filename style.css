@@ -397,7 +397,7 @@ footer img {
 		width: max(100px, 30vw);
 	}
 	.manual .fishbox p {
-		font-size: min(12px, 10vw);
+		font-size: min(11px, 10vw);
 		transform: translateY(-50%); 
 	}
 }
@@ -407,7 +407,7 @@ footer img {
 		width: 250px;
 	}
 	.manual .fishbox p {
-		font-size: min(3vw, 20px);
+		font-size: min(3vw, 15px);
 		transform: translateY(-30%); 
 	}
 }
