@@ -403,7 +403,7 @@ footer img {
 
 @media (min-width: 500px) {
 	.manual .fishbox img {
-		width: 200px;
+		width: 250px;
 	}
 	.manual .fishbox p {
 		font-size: min(3vw, 20px);
@@ -423,16 +423,21 @@ footer img {
 .manual .fishbox img {
 	height: auto; 
 	float: left; 
-	padding-right: 50px; 
+	padding-right: 25px; 
 	vertical-align: middle; 
-	padding-left: 50px;
+	padding-left: 25px;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
 }
 
 .manual .fishbox p {
 	margin-left: 5%; 
 	margin-right: 5%; 
 	text-align: left; 
-	transform: translateY(20%); 
+	transform: translateY(-10%); 
 	background-color: transparent;
+	position: relative;
+	z-index: 1;
 }
 

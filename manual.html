@@ -63,6 +63,12 @@
 			}
 		}, 300);
 	}
+	function boomClick(path, img) {
+		img.src = "gifs/fish/boom.gif";
+		setTimeout(function () {
+			img.src = path;
+		}, 600);
+	}
 </script>
 <!--title page-->
 <div class="manual">
@@ -80,64 +86,64 @@
 	<br class="no-print">
 
 	<!--page 1-->
-	<img src="images/manual/top_bar.png">
-	<center>
-		<section>
-			<img src="images/manual//rod_diagram.png" style="margin-left: auto; width: min(390px,90%); height: auto;">
-		</section>
-	</center>
-	<img src="images/manual/bottom_bar.png" class="pagebreak">
-	<br class="no-print">
-
-	<!--page 2-->
 	<img src="images/manual/top_bar_mirror.png">
 	<center>
 		<section>
-			<div class="fishbox"><img src="images/manual/bass.png">
+			<img src="images/manual/rod_diagram_2.png" style="margin-left: auto; width: min(600px,90%); height: auto;">
+		</section>
+	</center>
+	<img src="images/manual/bottom_bar_mirror.png" class="pagebreak">
+	<br class="no-print">
+
+	<!--page 2-->
+	<img src="images/manual/top_bar.png" style="padding-bottom: 30px;">
+	<center>
+		<section>
+			<div class="fishbox"><img src="gifs/fish/bass.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The most common of the fish, the bass. This fish is found in The Garden and in Fort Glub. It's iconic appearance led to it becoming the mascot for Grapple Fisher DX.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="images/manual/zombie.png">
+			<div class ="fishbox"><img src="gifs/fish/zombiefish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The Zombiefish had historically been hard to document. It had only been seen at nighttime; however, recent fishermen have reported seeing this fish in The Garden and in Fort Glub.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="images/manual/friend.png">
+			<div class ="fishbox"><img src="gifs/fish/friendfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The Friendfish loves to be caught. Many fishermen have documented giggling and/or squealing noises after grabbing it off the line. This fish is found in The Garden and The Abyss.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="images/manual/robot.png">
+			<div class ="fishbox"><img src="gifs/fish/robotfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The Robotfish is a miracle of technology - a solar-powered robotic fish that is impervious to water. It's shiny body seems to ward off predators, and is typically found in The Garden and The Abyss.</p></div>
 		</section>
 	</center>
-	<img src="images/manual/bottom_bar_mirror.png" style="padding-top: 60px;">
+	<img src="images/manual/bottom_bar.png" style="padding-top: 45px;">
 
 	<br class="no-print">
 
 	<!--page 3-->
-	<img src="images/manual/top_bar_mirror.png">
+	<img src="images/manual/top_bar_mirror.png" style="padding-bottom: 25px;">
 	<center>
 		<section>
-			<div class="fishbox"><img src="images/manual/sword.png">
+			<div class="fishbox"><img src="gifs/fish/swordfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> Similarly common to the bass, the Swordfish is prevalent in two locales - Fort Glub and The Abyss. Some fishermen claim to have heard something about bringing a sword to a fish fight.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="images/manual/clown.png">
+			<div class ="fishbox"><img src="gifs/fish/clownfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The Clownfish is a sign of misfortune. Many fishermen have recorded difficulty catching fish after discovering a clownfish. Fortunately, it's only been found in The Abyss.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="images/manual/ice.png">
+			<div class ="fishbox"><img src="gifs/fish/icefish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The Icefish is a close cousin to the Friendfish, despite its slippery nature. The Icefish has a sub-zero blood temperature, which prevents it from melting. It is found in The Abyss.</p></div>
 		</section>
 		<section style="padding-bottom: 12px;">
-			<div class ="fishbox"><img src="images/manual/blob.png">
+			<div class ="fishbox"><img src="gifs/fish/blobfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
 			<p> The Blobfish is a miracle of nature. Taking on the appearance of its depressurized self, it defies the laws of nature by continuing to survive. It is only found in The Abyss.</p></div>
 		</section>
 	</center>
-	<img src="images/manual/bottom_bar_mirror.png" style="padding-top: 59px;">
+	<img src="images/manual/bottom_bar_mirror.png" style="padding-top: 40px;">
 
 	<br class="no-print">
 	<!--page 5-->
-	<img src="images/manual/top_bar_mirror.png">
+	<img src="images/manual/top_bar.png">
 	<center>
 		<section>
 			<article>
@@ -154,7 +160,7 @@
 			<p>In this massive sprawling conglomerate of nature-y islands, many varieties of fish thrive. The Bass is found in a small pond at the beginning denoted by a large obelisk. The Zombiefish can be found in a small, sandy pond to the left after escaping the planter boxes. The Friendfish can be found in the fountain near the sandy pond. The Robotfish can be found in a massive pond in the last island.</p>
 		</section>
 	</center>
-	<img src="images/manual/bottom_bar_mirror.png">
+	<img src="images/manual/bottom_bar.png">
 
 	<br class="no-print">
 
@@ -180,7 +186,7 @@
 
 	<br class="no-print">
 	<!--page 7-->
-	<img src="images/manual/top_bar_mirror.png">
+	<img src="images/manual/top_bar.png">
 	<center>
 		<section>
 			<article>
@@ -197,7 +203,7 @@
 			<p>The Abyss has the most unique varieties of fish, while also having the most treacherous terrain. Friendfish can be found in two ponds right at the start. Icefish can be found on the first island and second islands. Swordfish can be found in a small pond on top of the mine. Clownfish can be found in the bottom of the mine. Blobfish can be found in the furthest depths of the locale.</p>
 		</section>
 	</center>
-	<img src="images/manual/bottom_bar_mirror.png">
+	<img src="images/manual/bottom_bar.png">
 
 </div>
 <footer class='no-print'>
