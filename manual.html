@@ -63,11 +63,12 @@
 			}
 		}, 300);
 	}
-	function boomClick(path, img) {
-		img.src = "gifs/fish/boom.gif";
+	function boomClick(path, img, reppath) {
+		img.src = "gifs/fish/" + reppath;
+		if(path == img.src) return;
 		setTimeout(function () {
 			img.src = path;
-		}, 600);
+		}, 1000);
 	}
 </script>
 <!--title page-->
@@ -75,8 +76,7 @@
 	<img src="images/manual/top_bar.png">
 	<center>
 		<section>
-			<a href="javascript:" onclick="startGrappleFisher();"><img src="images/manual/manual_logo.png"
-					style="height: auto; width: min(610px, 100%);"></a>
+			<a href = "https://nmaglio418.itch.io/grapple-fisher-dx" target="_blank"><img src="images/manual/manual_logo.png" style="height: auto; width: min(610px, 100%);"></a>
 		</section>
 		<section>
 			<h1> GRAPPLE FISHER DX MANUAL</h1>
@@ -89,7 +89,7 @@
 	<img src="images/manual/top_bar_mirror.png">
 	<center>
 		<section>
-			<img src="images/manual/rod_diagram_2.png" style="margin-left: auto; width: min(600px,90%); height: auto;">
+			<img src="images/manual/Grapple_Fisher_Diagram.png" style="margin-left: auto; width: min(600px,90%); height: auto;">
 		</section>
 	</center>
 	<img src="images/manual/bottom_bar_mirror.png" class="pagebreak">
@@ -99,19 +99,23 @@
 	<img src="images/manual/top_bar.png" style="padding-bottom: 30px;">
 	<center>
 		<section>
-			<div class="fishbox"><img src="gifs/fish/bass.gif" onclick="boomClick(this.src, this)" title="catch me!">
-			<p> The most common of the fish, the bass. This fish is found in The Garden and in Fort Glub. It's iconic appearance led to it becoming the mascot for Grapple Fisher DX.</p></div>
+			<div class="fishbox"><img src="gifs/fish/bass.gif" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3 style="text-align: right;"> The Bass </h3>
+			<p style="text-align-last: right;"> The Bass is the most common of the fish,  This fish is found in The Garden and in Fort Glub. It's iconic appearance led to it becoming the mascot for Grapple Fisher DX.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="gifs/fish/zombiefish.gif" onclick="boomClick(this.src, this)" title="catch me!">
+			<div class ="fishbox"><img src="gifs/fish/zombiefish.gif" style="float: right;" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3> The Zombiefish </h3>
 			<p> The Zombiefish had historically been hard to document. It had only been seen at nighttime; however, recent fishermen have reported seeing this fish in The Garden and in Fort Glub.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="gifs/fish/friendfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
-			<p> The Friendfish loves to be caught. Many fishermen have documented giggling and/or squealing noises after grabbing it off the line. This fish is found in The Garden and The Abyss.</p></div>
+			<div class ="fishbox"><img src="gifs/fish/friendfish.gif" onclick="boomClick(this.src, this, 'fiendfish.gif')" title="catch me!">
+			<h3 style="text-align: right;"> The Friendfish </h3>
+			<p style="text-align-last: right;"> The Friendfish loves to be caught. Many fishermen have documented giggling and squealing after catching it. It's lesser-known cousin, the Fiendfish, has allegedy been fighting for territory in the Abyss, but not in the Garden.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="gifs/fish/robotfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
+			<div class ="fishbox"><img src="gifs/fish/robotfish.gif" style="float: right;" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3> The Robotfish </h3>
 			<p> The Robotfish is a miracle of technology - a solar-powered robotic fish that is impervious to water. It's shiny body seems to ward off predators, and is typically found in The Garden and The Abyss.</p></div>
 		</section>
 	</center>
@@ -120,22 +124,26 @@
 	<br class="no-print">
 
 	<!--page 3-->
-	<img src="images/manual/top_bar_mirror.png" style="padding-bottom: 25px;">
+	<img src="images/manual/top_bar_mirror.png" style="padding-bottom: 47px;">
 	<center>
 		<section>
-			<div class="fishbox"><img src="gifs/fish/swordfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
-			<p> Similarly common to the bass, the Swordfish is prevalent in two locales - Fort Glub and The Abyss. Some fishermen claim to have heard something about bringing a sword to a fish fight.</p></div>
+			<div class="fishbox"><img src="gifs/fish/swordfish.gif" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3 style="text-align: right;"> The Swordfish </h3>
+			<p style="text-align-last: right;"> Similarly common to the bass, the Swordfish is prevalent in two locales - Fort Glub and The Abyss. Some fishermen claim to have heard something about bringing a sword to a fish fight.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="gifs/fish/clownfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
+			<div class ="fishbox"><img src="gifs/fish/clownfish.gif" style="float: right;" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3> The Clownfish </h3>
 			<p> The Clownfish is a sign of misfortune. Many fishermen have recorded difficulty catching fish after discovering a clownfish. Fortunately, it's only been found in The Abyss.</p></div>
 		</section>
 		<section>
-			<div class ="fishbox"><img src="gifs/fish/icefish.gif" onclick="boomClick(this.src, this)" title="catch me!">
-			<p> The Icefish is a close cousin to the Friendfish, despite its slippery nature. The Icefish has a sub-zero blood temperature, which prevents it from melting. It is found in The Abyss.</p></div>
+			<div class ="fishbox"><img src="gifs/fish/icefish.gif" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3> The Icefish </h3>
+			<p style="text-align-last: right;"> The Icefish is a close cousin to the Friendfish, despite its slippery nature. The Icefish has a sub-zero blood temperature, which prevents it from melting. It is found in The Abyss.</p></div>
 		</section>
 		<section style="padding-bottom: 12px;">
-			<div class ="fishbox"><img src="gifs/fish/blobfish.gif" onclick="boomClick(this.src, this)" title="catch me!">
+			<div class ="fishbox"><img src="gifs/fish/blobfish.gif" style="float: right;" onclick="boomClick(this.src, this, 'boom.gif')" title="catch me!">
+			<h3> The Blobfish </h3>
 			<p> The Blobfish is a miracle of nature. Taking on the appearance of its depressurized self, it defies the laws of nature by continuing to survive. It is only found in The Abyss.</p></div>
 		</section>
 	</center>
@@ -204,6 +212,23 @@
 		</section>
 	</center>
 	<img src="images/manual/bottom_bar.png">
+
+	<img src="images/manual/top_bar_mirror.png">
+	<center>
+		<section>
+			<h1 style="margin-bottom: 0px;"> Check it out on itch.io! </h1>
+		</section>
+		<section>
+			<a href = "https://nmaglio418.itch.io/grapple-fisher-dx" target="_blank"><img src="images/manual/logo.png" style="margin-left: auto; width: min(420px,90%); height: auto;"></a>
+		</section>
+		<section>
+			<p style="text-align: justify;"> Grapple Fisher DX is a 3D fishing platformer primarily developed to be played with beer and a custom fishing rod controller. Alternatively, you can play with mouse and keyboard controls listed on the beer label snippet attached below.</p>
+		</section>
+		<section>
+			<img src="images/manual/instruction_snippet.png" style="margin-left: auto; width: min(400px,90%); height: auto;">
+		</section>
+	</center>
+	<img src="images/manual/bottom_bar_mirror.png" class="pagebreak">
 
 </div>
 <footer class='no-print'>
